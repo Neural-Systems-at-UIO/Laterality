@@ -1,5 +1,5 @@
 # Laterality
-Quantitative analysis of rat and mouse brain data
+Python code for performing laterality analysis of rat and mouse brain data
 
 # Authors
 
