@@ -1,7 +1,7 @@
 # Laterality
 Python code for performing laterality analysis of rat and mouse brain data
 
-### Python Scripts for Data Processing
+### Python Scripts for Data Processing (Data_Cleaning_Scripts)
 1. **SliceCellCountMerger.py**: Merges cell counts into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created. The
 output tables are called “[Rat_number]_[col]_objects.xlsx”.
 2. **SliceRegionPixelMerger.py**: Merges region pixels into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created.
@@ -22,18 +22,17 @@ dimension (0 object counts), then also the damaged area has missing object size 
 “[Rat_number]_objects_counts_corrected.xlsx”. This last table is actually equal to the original “[Rat_number]_objects.xlsx”.
 8. **SizesAndCountsTotaling.py**: Generates the “[Rat_number]_objects_sizes_corrected_with_totals.xlsx” and “[Rat_number]_objects_counts_corrected_with_totals.xlsx”, an updated version of the previous tables with the added totals for regions (weighted average sizes and sum of counts).
 
-### Additional Scripts for Analysis
-- **OutliersIdentification.py**: Identifies outliers in neuronal cell sizes. Saves the distribution of neuronal cell sizes and highlights in orange (FFFF6600) and pink (FFFF00FF) the outliers for the full data and average regional data, respectively. 
-- **PlottingOutliers.py**: For analysis and interpretation of anomalous data based on cell counts. Plots 4 graphs to analyze and interpret anomalous data based
+### Additional Scripts for Analysis (Data_Cleaning_Scripts)
+9. **OutliersIdentification.py**: Identifies outliers in neuronal cell sizes. Saves the distribution of neuronal cell sizes and highlights in orange (FFFF6600) and pink (FFFF00FF) the outliers for the full data and average regional data, respectively. 
+10. **PlottingOutliers.py**: For analysis and interpretation of anomalous data based on cell counts. Plots 4 graphs to analyze and interpret anomalous data based
 on cell counts, for full data and average regional data, respectively.
-- **JointOutliersPlotting.py**: Allows for a comprehensive assessment of size outliers with respect to object counts across all four rats.
-- **EstimatingDensity.py**: Computes the densities in cell counts per mm3, both for each sample, and for each region. The output files are named “[Rat_number]_densities.xlsx”.
-- **DensitiesAndCounts.py**: Merges density and object count data across rats in the same file “All_densities.xlsx”.
-- **FinalDensities.py**: Removes non bilateral regions (i.e. Clear Label) and divides R and L data. It also filters row to remove those below a given threshold (200). The output file is
-“Processed_All_densities.xlsx”.
-- **LateralityIndex.py**: Evaluates the Laterality Index for each rat and brain region. The output file is “Processed_All_densities_with_LI.xlsx”.
+11. **JointOutliersPlotting.py**: Allows for a comprehensive assessment of size outliers with respect to object counts across all four rats.
+12. **EstimatingDensity.py**: Computes the densities in cell counts per mm3, both for each sample, and for each region. The output files are named “[Rat_number]_densities.xlsx”.
+13. **DensitiesAndCounts.py**: Merges density and object count data across rats in the same file “All_densities.xlsx”.
+14. **FinalDensities.py**: Removes non bilateral regions (i.e. Clear Label) and divides R and L data. It also filters row to remove those below a given threshold (200). The output file is “Processed_All_densities.xlsx”.
+15. **LateralityIndex.py**: Evaluates the Laterality Index for each rat and brain region. The output file is “Processed_All_densities_with_LI.xlsx”.
 
-### Visualization Scripts
+### Visualization Scripts (Plotting_Code_and_Images)
 1. **ScatterPlots.py**: Generates scatterplots of right versus left densities for each rat.
 2. **BlandAltman.py**: Creates Bland-Altman Plots for Laterality Index analysis.
 3. **LateralityIndexRanked.py & AverageAbsoluteLateralityIndex.py**: Tools for analyzing brain laterality.
