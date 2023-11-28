@@ -44,3 +44,5 @@ on cell counts, for full data and average regional data, respectively.
 Luca 
 
 # Acknowledgements
+
+This project received support from the EBRAINS infrastructure with funding from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under the Framework Partnership Agreement No. 650003 (HBP FPA).
