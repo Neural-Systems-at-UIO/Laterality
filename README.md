@@ -13,7 +13,7 @@ correct values from the colliculi cell counts and colliculi region pixels tables
 If the slice is the first or the last, the data of the closest undamaged slice is copied. Whenever the damaged neighboring slices are more than 2, their data is excluded as missing.
 The corrected/excluded data is highlighted in the final cell counts and region pixels tables in dark green (“00008000”). These two last codes are applied sequentially to all the rats.
 The files “[Rat_number]_objects_adjustments_damage.xlsx” and “[Rat_number]_regions_adjustments_damage.xlsx” contain the final corrected data for the rat.
-6. `ObjectsSizingAndCounting.py**: Populates a table for each rat and each colliculi data containing the available recorded average sizes of neurons in a given slice, per region. The
+6. `ObjectsSizingAndCounting.py`: Populates a table for each rat and each colliculi data containing the available recorded average sizes of neurons in a given slice, per region. The
 neuronal cell sizes are in pixels. They are absent (nan) when no neurons are observed in a given area of a given slice. The output file “[Rat_number]_objects_sizes.xlsx” contains slices
 as rows and regions as columns, and preserves the yellow/green highlights from the “[Rat_number]_objects_adjustments_damage.xlsx” table for further processing. The code also creates a table with the object counts for each region per slice, named “[Rat_number]_objects_counts.xlsx”, highlighted as well.
 7. `HandlingSizingAndCountingDamage.py`: Reports the correct sizes and counts of colliculi and to average data between neighbouring slices where no more than two adjacent
