@@ -6,7 +6,7 @@ Python code for performing laterality analysis of rat and mouse brain data
 output tables are called “[Rat_number]_[col]_objects.xlsx”.
 2. `SliceRegionPixelMerger.py`: Merges region pixels into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created.
 The output tables are called “[Rat_number]_[col]_regions.xlsx”.
-3. `QC.py**: Extends the regions contained in the qc file to the full list of their subregions, as per “brain_regions_dict.json”, resulting in a “[Rat_number]_qc_extended.xlsx” file.
+3. `QC.py`: Extends the regions contained in the qc file to the full list of their subregions, as per “brain_regions_dict.json”, resulting in a “[Rat_number]_qc_extended.xlsx” file.
 4. `HandlingPartsAdjustments.py`:  Allows for retrieval of cells requiring “parts adjustment” from the “[Rat_number]_qc_extended.xlsx” file and replaces them with the
 correct values from the colliculi cell counts and colliculi region pixels tables. It also highlights them in yellow (“00FFFF00”).
 5. `HandlingDamage.py`: Allows for automated averaging of damaged data across no more than two adjacent slices for a given region.
