@@ -2,7 +2,7 @@
 Python code for performing laterality analysis of rat and mouse brain data
 
 ### Python Scripts for Data Processing (Data_Cleaning_Scripts)
-1. `SliceCellCountMerger.py`: Merges cell counts into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created. The
+1. `SliceCellCountMerger.py` Merges cell counts into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created. The
 output tables are called “[Rat_number]_[col]_objects.xlsx”.
 2. **SliceRegionPixelMerger.py**: Merges region pixels into a single table, with slices as rows and regions as columns. If a slice is missing, an empty line is created.
 The output tables are called “[Rat_number]_[col]_regions.xlsx”.
